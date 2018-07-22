@@ -39,7 +39,8 @@ button {
 }
 .timer {
     position: relative;
-    background-color: rgba(169, 169, 169, 0.199);
+    /* background-color: rgba(169, 169, 169, 0.199); */
+    background-color: blue;
     font-size: 30px;
     color: black;
     max-width: fit-content;
