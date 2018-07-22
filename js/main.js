@@ -61,7 +61,13 @@ function myTimerInterval(){
 var gTime = 0
 function timer(){
     gTime++
+    var timerStr = '' 
+    if(gTime < 10 && gTime > 60){
+        timerStr += '0' + gTime
+    } else if (gTime < 60){
+        timerStr += `0${Math.floor(gTime/60)}:${timerStr}`
+    }   
     var elTime = document.querySelector('span')
-    elTime.innerText = gTime
+    elTime.innerText = timerStr
 }
 // console.log(timer())
